@@ -1,0 +1,413 @@
+:root {
+    /*### Primary*/
+
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /*### Neutral*/
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+
+/*
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+*/
+}
+
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+html {
+    font-size: 13px;
+}
+body {
+    min-height: 100vh;
+    background-color: var(--Light-grayish-blue);
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .container-first {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .first-block-first {
+        padding: 2rem;
+        border-radius: 0.8rem;
+        background-color: var(--Moderate-violet);
+        background-image: url(images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: right 18% top;
+        color: var(--White);
+    }
+    .first-header-first {
+        display: flex;
+        flex-direction: row;
+    }
+    .img-daniel {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        border: 1px solid var(--Light-gray);
+        border-radius: 100%;
+    }
+    .title-daniel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 12px;
+    }
+    .Daniel {
+        color: var(--Light-gray);
+        font-size: 1rem;
+        margin: 0;
+    }
+    .verified-daniel {
+        color: var(--Light-gray);
+        opacity: 50%;
+        margin: 0;
+    }
+    .first-title-first {
+        font-size: initial;
+    }
+    .first-text-first {
+        font-size: 1rem;
+        color: var(--Light-gray);
+        opacity: 70%;
+    }
+    
+    /*jeanette*/
+
+    .first-block-second {
+        padding: 2rem;
+        border-radius: 0.8rem;
+        background-color: var(--White);
+        color: var(--Very-dark-grayish-blue);
+    }
+    .first-header-second {
+        display: flex;
+        flex-direction: row;
+    }
+    .img-jeanette {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        border: 1px solid var(--Light-gray);
+        border-radius: 100%;
+    }
+    .title-jeanette {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 12px;
+    }
+    .Jeanette {
+        color: var(--Very-dark-blackish-blue);
+        font-size: 1rem;
+        margin: 0;
+    }
+    .Jeanette {
+        color: var(--Very-dark-blackish-blue);
+        font-size: 1rem;
+        margin: 0;
+    }
+    .verified-jeanette {
+        color: var(--Very-dark-grayish-blue);
+        opacity: 50%;
+        margin: 0;
+    }
+    .first-title-second{
+        font-size: 1.5rem;
+    }
+    .first-text-second{
+        font-size: 1rem;
+        color: var(--Very-dark-blackish-blue);
+        opacity: 70%;
+    }
+
+}
+
+@media (min-width: 600px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 132px;
+        gap: 32px;
+    }
+    .container-first {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .first-block-first {
+        padding: 2rem;
+        border-radius: 0.8rem;
+        background-color: var(--Moderate-violet);
+        background-image: url(images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: right 18% top;
+        color: var(--White);
+    }
+    .first-header-first {
+        display: flex;
+        flex-direction: row;
+    }
+    .img-daniel {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        border: 1px solid var(--Light-gray);
+        border-radius: 100%;
+    }
+    .title-daniel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 12px;
+    }
+    .Daniel {
+        color: var(--Light-gray);
+        font-size: 1rem;
+        margin: 0;
+    }
+    .verified-daniel {
+        color: var(--Light-gray);
+        opacity: 50%;
+        margin: 0;
+    }
+    .first-title-first {
+        font-size: initial;
+    }
+    .first-text-first {
+        font-size: 1rem;
+        color: var(--Light-gray);
+        opacity: 70%;
+    }
+
+    /*jeanette*/
+
+    .first-block-second{
+        padding: 2rem;
+        width: 200px;
+        border-radius: 0.8rem;
+        background-color: var(--White);
+        color: var(--Very-dark-grayish-blue);
+    }
+    .first-header-second{
+        display: flex;
+        flex-direction: row;
+    }
+    .img-jeanette {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        border: 1px solid var(--Light-gray);
+        border-radius: 100%;
+    }
+    .title-jeanette {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 12px;
+    }
+    .Jeanette {
+        color: var(--Very-dark-blackish-blue);
+        font-size: 1rem;
+        margin: 0;
+    }
+    .verified-jeanette {
+        color: var(--Very-dark-grayish-blue);
+        opacity: 50%;
+        margin: 0;
+    }
+    .first-title-second{
+        font-size: 1.5rem;
+    }
+    .first-text-second{
+        font-size: 1rem;
+        color: var(--Very-dark-blackish-blue);
+        opacity: 70%;
+    }
+
+    /*jonathan*/
+
+    .container-second {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .second-block-first {
+        padding: 2rem;
+        width: 200px;
+        border-radius: 0.8rem;
+        background-color: var(--Very-dark-grayish-blue);
+        color: var(--White);
+    }
+    .second-header-first {
+        display: flex;
+        flex-direction: row;
+    }
+    .img-jonathan {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        border: 1px solid var(--Light-gray);
+        border-radius: 100%;
+    }
+    .title-jonathan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 12px;
+    }
+    .Jonathan {
+        color: var(--Light-gray);
+        font-size: 1rem;
+        margin: 0;
+    }
+    .verified-jonathan {
+        color: var(--Light-gray);
+        opacity: 50%;
+        margin: 0;
+    }
+    .second-title-first {
+        font-size: 1.5rem;
+    }
+    .second-text-first {
+        font-size: 1rem;
+        color: var(--Light-gray);
+        opacity: 70%;
+    }
+    
+    /*patrick*/
+    
+    .second-block-second {
+        padding: 2rem;
+        position: relative;
+        right: 260.5px;
+        border-radius: 0.8rem;
+        background-color: var(--Very-dark-blackish-blue);
+        color: var(--White);
+    }
+    .second-header-second {
+        display: flex;
+        flex-direction: row;
+    }
+    .img-patrick {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        border: 1px solid var(--Light-gray);
+        border-radius: 100%;
+    }
+    .title-patrick {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 12px;
+    }
+    .Patrick {
+        color: var(--Light-gray);
+        font-size: 1rem;
+        margin: 0;
+    }
+    .verified-patrick {
+        color: var(--Light-gray);
+        opacity: 50%;
+        margin: 0;
+    }
+    .second-title-second {
+        font-size: 1.5rem;
+    }
+    .second-text-second {
+        font-size: 1rem;
+        color: var(--Light-gray);
+        opacity: 70%;
+    }
+
+    /*Kira*/
+
+    .container-third {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .third-block-first {
+        padding: 2rem;
+        height: 532px;
+        position: relative;
+        right: 264.78px;
+        border-radius: 0.8rem;
+        background-color: var(--White);
+        color: var(--Very-dark-grayish-blue);
+    }
+    .third-header-first {
+        display: flex;
+        flex-direction: row;
+    }
+    .img-kira {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        border: 1px solid var(--Light-gray);
+        border-radius: 100%;
+    }
+    .title-kira {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 12px;
+    }
+    .Kira {
+        font-size: 1rem;
+        margin: 0;
+    }
+    .verified-kira {
+        opacity: 50%;
+        margin: 0;
+    }
+    .third-title-first {
+        margin-top: 16px;
+        font-size: 1.5rem;
+    }
+    .third-text-first {
+        font-size: 1rem;
+        opacity: 70%;
+        margin-top: 16px;
+        line-height: 1.425rem;
+    }
+}
